@@ -204,37 +204,26 @@
 
 */
 
- .img-container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 2px solid #212121;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
+    .img-container {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/mainimg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        justify-content: center;
+        align-items: end;
+        border-bottom: 2px solid #212121;
 
-.full-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.arrow-container {
-    z-index: 1; /* ensures arrow stays on top of image */
-}
-
-/* Optional responsive tweak */
-@media (max-width: 550px) {
-    .full-bg-img {
-        object-position: 45% center;
     }
-}
+
+    @media (max-width: 550px) {
+        .img-container {
+            background-position: 45% center;
+            /* Shifts image to the right */
+        }
+    }
 
     #arrow {
         color: white;
