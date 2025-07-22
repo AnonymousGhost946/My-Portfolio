@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z-Index Overlap Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.blog-card2 {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  height: 250px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.about-blog2 {
+  width: 75%;
+  background-color: rgb(92, 216, 216);
+  padding: 30px;
+  clip-path: polygon(0 0, 105% 0, 96% 100%, 0 100%);
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.img2 {
+  width: 40%;
+  z-index: 1;
+}
+
+.img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+</style>
+<body>
+
+  <div class="blog-card2">
+    <div class="about-blog2">
+      <h2>The & symbol in Sass</h2>
+      <p>This blog discusses how to use the & in Sass and its benefits.</p>
+    </div>
+    <div class="img2">
+      <img src="/images/logo3.jpeg" alt="Blog image">
+    </div>
+  </div>
+
+</body>
+</html>
