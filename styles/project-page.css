@@ -1,0 +1,159 @@
+  * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body {
+  overflow-x: hidden;
+}
+
+
+    .project-container {
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    .project-container {
+        background-color: black;
+        border-bottom: 2px solid #212121;
+        height: 100vh;
+    }
+
+  .projects {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+.spacer {
+    min-width: 950px; /* Adjust to how far from left you want the first card */
+    height: 1px;
+}
+
+    .project-card {
+        padding: 20px;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .project-card:hover {
+        transform: scale(1);
+    }
+
+    @media (max-width: 450px) {
+        .project-card {
+            padding-left: 10px;
+        }
+
+    }
+
+    .prjct-img {
+        height: 340px;
+
+        width: 280px;
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #f5f5f5;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+
+
+
+    }
+
+    .prjct-img img {
+        height: 100%;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .about-project {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 337px;
+        width: 276px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #413939e1;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prjct-img:hover .about-project {
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    #project-btn {
+        border-bottom: 2px solid #212121;
+    }
+
+    .heading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    .heading {
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: transparent;
+        -webkit-text-stroke: 1px orange;
+        transition: color 0.4s ease;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .heading:hover {
+        color: orange;
+    }
+
+    .blog-link button {
+        margin-top: 25px;
+        position: relative;
+        overflow: hidden;
+        border: none;
+        padding: 10px 20px;
+        background-color: #111;
+        cursor: pointer;
+        transition: color 0.4s ease;
+        border-radius: 5px;
+    }
+
+    .blog-link a {
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        transition: color 0.4s ease;
+    }
+
+
+    .blog-link button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+    .blog-link button:hover::before {
+        left: 0;
+    }
+
+    .blog-link button:hover a {
+        color: black;
+    }
