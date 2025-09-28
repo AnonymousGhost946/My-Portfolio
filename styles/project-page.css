@@ -8,16 +8,12 @@
 }
 
 
-    .project-container {
-        height: 100vh;
-        width: 100%;
-        background-color: lightblue;
-    }
 
     .project-container {
         background-color: black;
         border-bottom: 2px solid #212121;
         height: 100vh;
+        
     }
 
   .projects {
