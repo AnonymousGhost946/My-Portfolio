@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<style>
+    *{margin: 0;box-sizing: border-box;padding: 0;text-decoration: none;}
+
+    .formContainer{background-color: black;color: white;height: 100vh;width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        background-color: rgb(20, 16, 16);
+        height: 60%;
+        width: 50%;
+        display: flex;
+        justify-content: center;align-items: center;
+        flex-direction: column;
+
+    }
+    label,input{width: 90%;margin: 5px;}
+    a{text-align: end;color: white;text-decoration: underline;font-size: 11px;width: 90%;margin-top: 20px;}
+
+    form h1 {text-align: center;}
+    button{margin-top: 20px;height: 50px;width: 90%;}
+    button:hover{background-color: rgb(107, 241, 17);font-size: 15px;font-weight: 600;transition: all 1s ease-in-out;cursor: pointer; }
+</style>
+<body>
+
+    <marquee behavior="repeat" >Backend is in Under Development</marquee>
+    <div class="formContainer">
+
+        <form action="">
+            <h1>Login</h1>
+
+            <label for="email">Enter your Email</label>
+            <input type="email" placeholder="example@gmail.com" required><br> 
+
+            <label for="password">Enter your Email Password</label>
+            <input type="password"required>
+
+<br>
+            <button>Login</button>
+        
+            <a href="">Forget Password</a>
+        </form>
+    </div>
+    
+</body>
+</html>
